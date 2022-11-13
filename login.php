@@ -19,7 +19,7 @@
 ?>
 
 <br/>
-<fieldset class="col-sm-6">
+<fieldset class="col-sm-6" >
 <legend>User Login:</legend>
 <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
 <table style="width: 100%" cellspacing="0">

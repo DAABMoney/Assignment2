@@ -7,7 +7,7 @@
 <br/>
 <fieldset>
 <legend>Attendee Information:</legend>
-<form method="post" action="success.php" onsubmit="return validateForm()">
+<form method="post" action="success.php" enctype="multipart/form-data" onsubmit="return validateForm()">
 <table style="width:100%" cellspacing="0">
     <tr>
        <td>
