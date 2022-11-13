@@ -5,7 +5,6 @@
     $result = $crud->getSpecialty();
 ?>
 <br/>
-<br/>
 <fieldset>
 <legend>Attendee Information:</legend>
 <form method="post" action="success.php" onsubmit="return validateForm()">
@@ -88,6 +87,7 @@
   <div class="col-sm-10">
     <i class="fa fa-image"></i>
     <input type="file" accept="image/*" class="custom-file-input" id="upimg" name="upimg" ><br/>
+    <label >
     <small id="upimg" class="form-text text-warning">File upload is Optional</small> 
 </div>
   </div>
