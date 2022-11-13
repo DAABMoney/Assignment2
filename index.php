@@ -82,9 +82,19 @@
   </div>
 </td>
 </tr>
-<tr>
+    <tr>        
+<td>
+  <div class="custom-file">
+  <div class="col-sm-10">
+    <i class="fa fa-image"></i>
+    <input type="file" accept="image/*" class="custom-file-input" id="upimg" name="upimg" ><br/>
+    <small id="upimg" class="form-text text-warning">File upload is Optional</small> 
+</div>
+  </div>
+</td>
     <td>
-  <div class="d-grid gap-2">    
+  <div class="d-grid gap-1">
+    <br/>    
   <button type="submit" name="submit" class="btn btn-primary" value="Submit">Register &nbsp;<i class="fa fa-send-o fa-fly"></i></button>
 </div>
 </td>

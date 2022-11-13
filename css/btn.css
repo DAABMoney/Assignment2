@@ -25,6 +25,10 @@ a {
     background-color: #0f118a;
     color: white;    
   }
+  .footer-bg {
+    background-color: #0f118a;
+    color: white;    
+  }
 
   fieldset{
     margin: 15px;
@@ -37,7 +41,7 @@ a {
   }
   .fieldsetLogin{
     margin: 15px;
-    max-width: 520px;
+    max-width: 120px;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px #666;

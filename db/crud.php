@@ -6,10 +6,10 @@
             $this->db = $dbconn;
         }
 
-        public function insert($fname, $lname, $dob, $specialty, $email, $contact){
+        public function insert($fname, $lname, $dob, $specialty, $email, $contact, $upimg){
             try {
-                $sql ="INSERT INTO registered (first_name,last_name,date_of_birth,specialty_id,email,contact_number) 
-                VALUE (:fname, :lname, :dob, :specialty, :email, :contact)";
+                $sql ="INSERT INTO registered (first_name,last_name,date_of_birth,specialty_id,email,contact_number,upimg) 
+                VALUE (:fname, :lname, :dob, :specialty, :email, :contact, :upimg)";
                 $stmt = $this -> db->prepare($sql);
                 $stmt->bindparam(':fname',$fname);
                 $stmt->bindparam(':lname',$lname);
@@ -17,6 +17,7 @@
                 $stmt->bindparam(':specialty',$specialty);
                 $stmt->bindparam(':email',$email);                
                 $stmt->bindparam(':contact',$contact);
+                $stmt->bindparam(':upimg',$upimg);
                 $stmt->execute();
                 return true;
             } catch (PDOException $e) {

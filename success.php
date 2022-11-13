@@ -12,7 +12,15 @@
         $specialty = $_POST['specialty'];
         $email = $_POST['email'];
         $contact = $_POST['contact'];
-        $isSuccess = $crud->insert($fname, $lname, $dob, $specialty, $email, $contact);
+
+        $origin_file = $_FILES["upimg"]["tmz_name"];
+        $ext = pathinfo($_FILES["upimg"]["name"], PATHINFO_EXTENSION);
+        $target_dir = 'uploads/';
+        $destination = "$target_dir$contact.$ext";
+        move_uploaded_file($origin_file,$destination);
+       
+
+        $isSuccess = $crud->insert($fname, $lname, $dob, $specialty, $email, $contact, $destination);
         if($isSuccess){
             echo '<h2 class="text-center text-success">Registration successful.</h2><br/><br/>';
             echo '<h2 class="text-center text-success">Thank you for registering. Click the link 

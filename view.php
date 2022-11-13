@@ -17,6 +17,8 @@
 
 <br/>
 <br/>
+<img src="<?php echo empty($result['upimg']) ? "uploads/blank.png" : $result['upimg']; ?>
+" class="rounded" style="width: 12%; height: 12%">
 <div class="card" style="width: 18rem;">
     <div class="card-body">
         <h3 class="card-title">
@@ -43,9 +45,4 @@
         <a onclick="return confirm('You are about the delete information. Are you sure you want to delete record?');"
             href="Delete.php?id=<?php echo $result['reg_id'] ?>" class="btn btn-danger">Delete</a>
 <?php }?>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 <?php require 'includes/footer.php' ?>
