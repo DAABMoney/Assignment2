@@ -1,6 +1,7 @@
 <?php
     $title ="Edit Information";
     include 'includes/header.php';
+    require_once 'includes/authen.php';
     require_once 'db/dbconn.php';
     $result = $crud->getSpecialty();
     if(!isset($_GET['id'])){
@@ -14,7 +15,6 @@
 
 <br/>
 <br/>
-<h1 class="text-center">Edit Information</h1>    
 <fieldset>
 <legend>Edit attendee Information:</legend>
 <form method="post" action="saveChanges.php" name="id" onsubmit="return validateForm()">

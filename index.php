@@ -6,7 +6,6 @@
 ?>
 <br/>
 <br/>
-<h1 class="text-center">Attendance Registration</h1>    
 <fieldset>
 <legend>Attendee Information:</legend>
 <form method="post" action="success.php" onsubmit="return validateForm()">

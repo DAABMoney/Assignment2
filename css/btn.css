@@ -35,6 +35,15 @@ a {
     padding-top: 1px;
     align-items: center;
   }
+  .fieldsetLogin{
+    margin: 15px;
+    max-width: 520px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #666;
+    padding-top: 1px;
+    align-items: center;
+  }
   legend {
     padding: 1px 2px;
     background: aliceblue;          

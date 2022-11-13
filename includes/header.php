@@ -1,3 +1,7 @@
+<?php
+require_once 'includes/session.php'
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +16,7 @@
 </head>
 <body>
   <nav class="navbar navbar-dark navbar-expand-lg navbar-bg">
-  <div class="container-fluid">
+  <div class="container">
   <a class="navbar-brand" href="index.php">
       <img src="images/php-logo.png" alt="Bootstrap" width="75" height="45">
     </a>
@@ -39,16 +43,19 @@
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+          </ul>        
+        </ul>        
+     <div class="navbar-nav ml-auto">
+      <?php 
+      if(!isset($_SESSION['userid'])){
+        ?>
+      <a class="nav-item nav-link" href="login.php">Login</a>
+      <?php } else { ?>
+        <a class="nav-item nav-link" href="#"><span>Welcome <?php echo $_SESSION['username']?></span></a>
+        <a class="nav-item nav-link" href="logout.php">Logout</a>
+        <?php }?>
+      </div>
+      </div> 
     </div>
   </div>
 </nav>

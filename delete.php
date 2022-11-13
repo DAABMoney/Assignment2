@@ -1,5 +1,6 @@
 <?php
 require_once 'db/dbconn.php';
+require_once 'includes/authen.php';
 
 if(!$_GET['id']){
     echo '<h2 class="text-danger">Error deleting participant information. <br/>

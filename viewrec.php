@@ -1,12 +1,14 @@
 <?php
     $title ="View Records";
     include 'includes/header.php';
+    require_once 'includes/authen.php';
     require_once 'db/dbconn.php';
 
     $result = $crud->getAttendees();
 ?>
 <br/>
-
+    <h2 class="text-center">Registered Participants</h2>
+    <br/>
     <table class="table table-striped table-hover" >
     <thead>
         <tr>

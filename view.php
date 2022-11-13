@@ -1,6 +1,7 @@
 <?php
     $title ="View Record";
     include 'includes/header.php';
+    require_once 'includes/authen.php';
     require_once 'db/dbconn.php';
 
     $result = $crud->getAttendees();
