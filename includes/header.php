@@ -18,7 +18,7 @@ require_once 'includes/session.php'
   <nav class="navbar navbar-dark navbar-expand-lg navbar-bg">
   <div class="container">
   <a class="navbar-brand" href="index.php">
-      <img src="images/php-logo.png" alt="Bootstrap" width="75" height="45">
+      <img src="images/phplogo.png" alt="Bootstrap" width="75" height="45">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
