@@ -13,7 +13,7 @@
         $email = $_POST['email'];
         $contact = $_POST['contact'];
 
-        $origin_file = $_FILES["upimg"]["tmz_name"];
+        $origin_file = $_FILES["upimg"]["tmp_name"];
         $ext = pathinfo($_FILES["upimg"]["name"], PATHINFO_EXTENSION);
         $target_dir = 'uploads/';
         $destination = "$target_dir$contact.$ext";
