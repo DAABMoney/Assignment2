@@ -18,7 +18,7 @@
 <br/>
 <br/>
 <img src="<?php echo empty($result['upimg']) ? "uploads/blank.png" : $result['upimg']; ?>
-" class="rounded" style="width: 12%; height: 12%">
+" class="rounded" style="width: 30%; height: 30%">
 <div class="card" style="width: 18rem;">
     <div class="card-body">
         <h3 class="card-title">
